@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tailwind Profile Card Template : Tailwind Toolbox</title>
+  <link rel="icon" href="https://png.pngtree.com/templates/sm/20180619/sm_5b28b0ab63049.png">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://img.freepik.com/free-photo/beautiful-mountains-landscape_23-2151151082.jpg?t=st=1720535873~exp=1720539473~hmac=838fa37ed04fc57eb0c029235c15f4dc1e582dc37d1483e6b263ea0b096bbab5&w=900');">
+
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="max-w-4xl w-full lg:w-4/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+
+
+      <div class="p-4 md:p-12 text-center lg:text-left">
+        <h1 class="text-3xl font-bold pt-8 lg:pt-0">VGWARDEN</h1>
+        <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+        <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><i class="bi bi-briefcase-fill text-green-700 pr-4 text-lg"></i>Front-End Web Developer, Minecraft Server Developer and Discord Server Developer</p>
+        <p class="pt-8 text-sm">Hello I Am VGWARDEN,I Do Things Like Developing Front-End Website(Not Fully Learnt It), Minecraft Server And Discord Server, Also I Am Intreasted In Ethical Hacking</p>
+        
+        <div class="bg-white p-8 rounded shadow-lg text-center">
+          <h1 class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">WARNING: Attempting to hack this website is illegal. Here's your IP address: <span id="ip_address" class="font-bold">{{ ip }}</span></h1>
+        </div>
+
+        <div class="pt-12 pb-8">
+          <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+            Get In Touch
+          </button> 
+        </div>
+
+        <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+          <a class="link" href="/Discord" data-tippy-content="@discord_handle"><i class="bi bi-discord text-gray-600 hover:text-green-700 h-8"></i></a>
+          <a class="link" href="https://www.instagram.com/viggamer_official/" data-tippy-content="@instagram_handle"><i class="bi bi-instagram text-gray-600 hover:text-green-700 h-8"></i></a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
+  <script>
+    tippy('.link')
+  </script>
+
+  <script>
+    const toggleSwitch = document.querySelector('.js-change-theme');
+
+    toggleSwitch.addEventListener('click', function() {
+      const body = document.querySelector('body');
+      body.classList.toggle('dark');
+    });
+  </script>
+    
+</body>
+
+</html>
